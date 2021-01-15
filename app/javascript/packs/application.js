@@ -9,10 +9,10 @@ require("channels")
 
 import 'bootstrap';
 import { timer } from '../components/timer';
-import { seach, search } from '../components/search';
+import { englishWord } from '../components/englishWord';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your JS functions here
   timer();
-  search();
+  englishWord();
 });

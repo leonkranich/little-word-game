@@ -1,11 +1,11 @@
-const search = () => {
+const englishWord = () => {
   const form = document.getElementById("search-form");
   
   const searchWord = (word) => {
     fetch(`https://wagon-dictionary.herokuapp.com/${word}`)
     .then(response => response.json())
     .then((data) => {
-      console.log(data);
+      console.log(data['found']);
     });
   };
 
@@ -18,4 +18,4 @@ const search = () => {
 
 }
 
-export { search };
+export { englishWord };
