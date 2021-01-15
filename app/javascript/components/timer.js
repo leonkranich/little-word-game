@@ -1,7 +1,6 @@
 const timer = () => {
   const startButton = document.getElementById("start-button");
   const endButton = document.getElementById("end-button");
-  const form = document.getElementById("end-submit");
 
   startButton.addEventListener("click", (event) => {
     let startTime = performance.now();
