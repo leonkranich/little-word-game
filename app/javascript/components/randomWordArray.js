@@ -1,7 +1,7 @@
 const randomWordArray = () => {
   let result           = '';
   const characters       = 'AABCDEEFGHIIJKLMNOOPQRSTUUVWXYZ';
-   const charactersLength = characters.length;
+  const charactersLength = characters.length;
   for ( var i = 0; i < 10; i++ ) {
      result += characters.charAt(Math.floor(Math.random() * charactersLength));
   }
