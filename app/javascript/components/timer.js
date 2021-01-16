@@ -10,6 +10,7 @@ const timer = () => {
       timeDiff /= 1000;
       const seconds = timeDiff.toFixed(3);
       console.log(seconds);
+      return seconds;
     });
   });
   

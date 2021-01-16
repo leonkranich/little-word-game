@@ -8,5 +8,7 @@ const randomWordArray = () => {
   console.log(result);
   return result.split('');
 }
+const Resultarray = randomWordArray();
 
-export { randomWordArray };
+// export { randomWordArray };
+export { Resultarray };
