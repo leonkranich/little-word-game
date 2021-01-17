@@ -8,14 +8,14 @@ require("turbolinks").start()
 require("channels")
 
 import 'bootstrap';
-import { timer } from '../components/timer';
+import { timerAndStart } from '../components/timerAndStart';
 import { englishWord } from '../components/englishWord';
 // import { randomWordArray } from '../components/randomWordArray';
 import { wordIncluded } from '../components/wordIncluded';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your JS functions here
-  timer();
+  timerAndStart();
   englishWord();
   // randomWordArray();
   wordIncluded();
