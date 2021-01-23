@@ -16,11 +16,12 @@ const timerAndStart = () => {
       let timeDiff = endTime - startTime;
       timeDiff /= 1000;
       const seconds = timeDiff.toFixed(3);
-      console.log(seconds);
-      return seconds;
+      time.insertAdjacentHTML('afterbegin', ` <p>Wow it took you only ${seconds}!</p>`);
     });
   });
   
 }
 
 export { timerAndStart };
+
+

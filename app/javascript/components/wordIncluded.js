@@ -1,7 +1,6 @@
 import { Resultarray } from './randomWordArray';
 
 const wordIncluded = () => {
-  console.log(Resultarray);
   const form = document.getElementById("search-form");
 
   form.addEventListener('submit', (event) => {
@@ -9,13 +8,16 @@ const wordIncluded = () => {
     const input = event.currentTarget.querySelector('.form-control');
     // results.innerHTML = '';
     const word = input.value.toUpperCase();
-    console.log(word);
     const wordArray = word.split('');
     const allFounded = (wo, ar) => {
       return wo.every( letter => ar.includes(letter) );
     };
-    console.log(allFounded(wordArray, Resultarray));
-    return allFounded(wordArray, Resultarray);
+    const included = allFounded(wordArray, Resultarray);
+    if (included === true) {
+      result.insertAdjacentHTML('afterbegin', ` <p>You're a genuis! ${word} is included</p>`);
+    } else {
+      result.insertAdjacentHTML('afterbegin', ` <p>dunmbass</p>`);
+    }
   });
 
 }
