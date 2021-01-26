@@ -2,7 +2,7 @@ import { Resultarray } from './randomWordArray';
 
 const timerAndStart = () => {
   const startButton = document.getElementById("start-button");
-  const endButton = document.getElementById("end-button");
+  const endButton = document.getElementById("end-submit");
   const letters = document.querySelector('.letters');
 
   startButton.addEventListener("click", (event) => {

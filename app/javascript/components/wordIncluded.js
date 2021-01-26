@@ -14,7 +14,7 @@ const wordIncluded = () => {
     };
     const included = allFounded(wordArray, Resultarray);
     if (included === true) {
-      result.insertAdjacentHTML('afterbegin', ` <p>You're a genuis! ${word} is included</p>`);
+      result.insertAdjacentHTML('afterbegin', ` <p>Almost genuis! ${word} is included</p>`);
     } else {
       result.insertAdjacentHTML('afterbegin', ` <p>dunmbass</p>`);
     }

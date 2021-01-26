@@ -9,7 +9,7 @@ require("channels")
 
 import 'bootstrap';
 import { timerAndStart } from '../components/timerAndStart';
-// import { englishWord } from '../components/englishWord';
+import { englishWord } from '../components/englishWord';
 // import { randomWordArray } from '../components/randomWordArray';
 import { wordIncluded } from '../components/wordIncluded';
 // import { showResult } from '../components/showResult';
@@ -17,7 +17,7 @@ import { wordIncluded } from '../components/wordIncluded';
 document.addEventListener('turbolinks:load', () => {
   // Call your JS functions here
   timerAndStart();
-  // englishWord();
+  englishWord();
   // randomWordArray();
   wordIncluded();
   // showResult();

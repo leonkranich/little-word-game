@@ -6,6 +6,11 @@ const englishWord = () => {
     .then(response => response.json())
     .then((data) => {
       console.log(data['found']);
+      if (data['found'] === true) {
+        result.insertAdjacentHTML('beforeend', ` <p>...and you are a <strong>genuis!</strong> ${word.toUpperCase()} is an english word!</p>`);
+      } else {
+        result.insertAdjacentHTML('beforeend', ` <p>but still dunmbass, ${word.toUpperCase()} is not an english word!</p>`);
+      }
     });
   };
 
