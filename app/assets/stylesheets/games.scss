@@ -6,6 +6,17 @@ body {
   padding: 0 32px;
 }
 
+a {
+  color: #1e9741;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #14692c;
+}
+
 h1 {
   font-weight: 400;
 }

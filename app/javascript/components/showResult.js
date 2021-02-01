@@ -37,12 +37,15 @@ const showResult = () => {
       console.log(isIncluded);
       if (isIncluded === true) {
         if (data['found'] === true) {
-          result.insertAdjacentHTML('afterbegin', ` <p>You are <strong>genuis!!! ${word}</strong> is a valid English word</p>`);
+          result.insertAdjacentHTML('afterbegin', ` <p>You are <strong>genuis!!! ${word}</strong> is a valid English word</p>
+          <a onClick="window.location.reload()">Play again?</a>`);
         } else {
-          result.insertAdjacentHTML('afterbegin', ` <p>Sorry but <strong>${word}</strong> does not seem to be a valid English word...dumbass</p>`);
+          result.insertAdjacentHTML('afterbegin', ` <p>Sorry but <strong>${word}</strong> does not seem to be a valid English word...dumbass</p>
+          <a onClick="window.location.reload()">Play again?</a>`);
         }
       } else {
-        result.insertAdjacentHTML('afterbegin', ` <p>Dunmbass! You can't build <strong>${word}</strong> with the letters <strong>${Resultarray.join('-')}</strong></p>`);
+        result.insertAdjacentHTML('afterbegin', ` <p>Dunmbass! You can't build <strong>${word}</strong> with the letters <strong>${Resultarray.join('-')}</strong></p>
+        <a onClick="window.location.reload()">Play again?</a>`);
       }
     });
   };
