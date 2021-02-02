@@ -3,7 +3,7 @@ require "open-uri"
 class GamesController < ApplicationController
 
   def new
-    # @letters = Array.new(10) { ('A'..'Z').to_a.sample }
+    @letters = Array.new(10) { ('A'..'Z').to_a.sample }
     # @letters = ['O','O','O','O','O','O','O','O','O','O']
   end
 

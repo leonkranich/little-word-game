@@ -12,7 +12,7 @@ import 'bootstrap';
 // import { englishWord } from '../components/englishWord';
 // import { randomWordArray } from '../components/randomWordArray';
 // import { wordIncluded } from '../components/wordIncluded';
-import { showResult } from '../components/showResult';
+// import { showResult } from '../components/showResult';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your JS functions here
@@ -20,5 +20,5 @@ document.addEventListener('turbolinks:load', () => {
   // englishWord();
   // randomWordArray();
   // wordIncluded();
-  showResult();
+  // showResult();
 });
